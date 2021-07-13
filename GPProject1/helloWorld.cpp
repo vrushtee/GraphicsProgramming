@@ -3,7 +3,8 @@
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
 //
-//void main()
+//
+//void projectOne()
 //{
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
@@ -17,7 +18,10 @@
 //	}
 //	glfwTerminate();
 //}
-
+//void main()
+//{
+//	projectOne();
+//}
 
 
 
@@ -29,7 +33,7 @@
 //
 //using namespace std;
 //
-//void main()
+//void projectTwo()
 //{
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
@@ -39,7 +43,7 @@
 //	}
 //	else
 //	{
-//		cout << "glfwINit function is available!!"<<endl;
+//		cout << "glfwINit function is available!!" << endl;
 //	}
 //	window = glfwCreateWindow(900, 900, "My First Graphics Window", NULL, NULL);
 //	if (!window)
@@ -58,7 +62,12 @@
 //	}
 //	glfwTerminate();
 //}
-
+//
+//void main()
+//{
+//	projectTwo();
+//	
+//}
 
 
 
@@ -108,7 +117,6 @@
 //	}
 //	glfwTerminate();
 //}
-
 
 
 
@@ -1462,6 +1470,7 @@
 //}
 
 
+
 ////19 Scene with keyvoard input
 
 //#include<GL/glew.h>
@@ -1848,8 +1857,6 @@
 
 
 
-
-//--------------------------------------------- 8th july 21
 ////lighthouse
 
 //#include<GL/glew.h>
@@ -1888,17 +1895,17 @@
 //	float triangleOne[] =
 //	{
 //		//base
-//		-0.9,-0.9,0,
-//		-0.9,-0.7,0,
+//		-1,-1,0,
+//		-1,-0.7,0,
 //
-//		-0.9,-0.7,0,
-//		0.9,-0.7,0,
+//		-1,-0.7,0,
+//		1,-0.7,0,
 //
-//		0.9,-0.7,0,
-//		0.9,-0.9,0,
+//		1,-0.7,0,
+//		1,-1,0,
 //
-//		0.9,-0.9,0,
-//		-0.9,-0.9,0,
+//		1,-1,0,
+//		-1,-1,0,
 //
 //	};
 //
@@ -1953,13 +1960,13 @@
 //		0.6,0.6,0
 //	};
 //
-//	
+//
 //
 //	//gameloop
 //	while (!glfwWindowShouldClose(window))
 //	{
 //		//for the bg color
-//		glClearColor(0.5, 1, 1, 0); //for rgb color change
+//		glClearColor(0, 0, 0, 0); //for rgb color change
 //		glClear(GL_COLOR_BUFFER_BIT);//to clear the buffer
 //
 //		
@@ -1987,13 +1994,11 @@
 //		glDrawArrays(GL_LINES, 0, 18);
 //		glDisableClientState(GL_VERTEX_ARRAY);
 //
-//
 //		glfwSwapBuffers(window);//to swap the new color for window
 //		glfwPollEvents();
 //	}
 //	glfwTerminate();
 //}
-
 
 
 
@@ -2160,8 +2165,176 @@
 
 
 
-
 //lighthouse by triangle or polygon
+
+//#include<GL/glew.h>
+//#include<GLFW/glfw3.h>
+//#include<iostream>
+//
+//using namespace std;
+//
+//void ligHouse()
+//{
+//	GLint wid = 800; //*window variable
+//	GLint height = 800; //*window variable
+//	GLFWwindow* window; //pointer var as window that will hold address only 
+//	glfwInit();
+//	if (!glfwInit())
+//	{
+//		cout << "glfwINit function error!!" << endl;
+//	}
+//	else
+//	{
+//		cout << "glfwINit function is available!!" << endl;
+//	}
+//	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
+//	if (!window)
+//	{
+//		cout << "Window not available!!" << endl;
+//	}
+//	else
+//	{
+//		cout << "Window is opening successfully!!" << endl;
+//	}
+//
+//	// make the window context current
+//	glfwMakeContextCurrent(window);
+//
+//	float triangleOne[] =
+//	{
+//		//base
+//		-0.9,-0.9,0,
+//		-0.9,-0.7,0,
+//
+//		-0.9,-0.7,0,
+//		0.9,-0.7,0,
+//
+//		0.9,-0.7,0,
+//		0.9,-0.9,0,
+//
+//		0.9,-0.9,0,
+//		-0.9,-0.9,0,
+//
+//	};
+//
+//	float home[] =
+//	{
+//		//home
+//		-0.6,-0.4,0,
+//		-0.1,-0.4,0,
+//
+//		-0.1,-0.4,0,
+//		-0.1,-0.7,0,
+//
+//		-0.6,-0.4,0,
+//		-0.6,-0.7,0,
+//
+//		-0.6,-0.4,0,
+//		-0.35,-0.1,0,
+//
+//		-0.35,-0.1,0,
+//		-0.1,-0.4,0
+//	};
+//
+//	float homeCol[] =
+//	{
+//		1,0,0,
+//		1,0,1,
+//		1,1,0,
+//		1,1,0,
+//		0,0,1,
+//		0,1,0,
+//		1,0,1,
+//		1,1,0,
+//		0,1,1,
+//		0,1,0
+//	};
+//
+//	float lightHouse[] =
+//	{
+//		//lighthouse
+//		0.1,-0.7,0,
+//		0.4,0.5,0,
+//
+//		0.4,0.5,0,
+//		0.6,0.5,0,
+//
+//		0.6,0.5,0,
+//		0.8,-0.7,0,
+//
+//		0.3,0.5,0,
+//		0.7,0.5,0,
+//
+//		0.7,0.5,0,
+//		0.7,0.6,0,
+//
+//		0.7,0.6,0,
+//		0.3,0.6,0,
+//
+//		0.3,0.6,0,
+//		0.3,0.5,0,
+//
+//		//triangle
+//		0.4,0.6,0,
+//		0.5,0.8,0,
+//
+//		0.5,0.8,0,
+//		0.6,0.6,0
+//	};
+//
+//
+//
+//	//gameloop
+//	while (!glfwWindowShouldClose(window))
+//	{
+//		//for the bg color
+//		glClearColor(0, 0, 0, 0); //for rgb color change
+//		glClear(GL_COLOR_BUFFER_BIT);//to clear the buffer
+//
+//
+//		//draw triangle
+//		glColor3f(1, 0, 0);
+//		glLineWidth(20);
+//		glEnableClientState(GL_VERTEX_ARRAY);
+//		glVertexPointer(3, GL_FLOAT, 0, triangleOne);
+//		glDrawArrays(GL_LINES, 0, 8);
+//		glDisableClientState(GL_VERTEX_ARRAY);
+//
+//		//home
+//		//glColor3f(0, 0, 1);
+//		glLineWidth(20);
+//		glEnableClientState(GL_VERTEX_ARRAY);
+//		//color
+//		glEnableClientState(GL_COLOR_ARRAY);
+//		glVertexPointer(3, GL_FLOAT, 0, home);
+//		glColorPointer(3, GL_FLOAT, 0, homeCol);
+//		glDrawArrays(GL_LINES, 0, 10);
+//		glDisableClientState(GL_COLOR_ARRAY);
+//		glDisableClientState(GL_VERTEX_ARRAY);
+//
+//		//ligthouse
+//		glColor3f(0, 1, 0);
+//		glLineWidth(20);
+//		glEnableClientState(GL_VERTEX_ARRAY);
+//		glVertexPointer(3, GL_FLOAT, 0, lightHouse);
+//		glDrawArrays(GL_LINES, 0, 18);
+//		glDisableClientState(GL_VERTEX_ARRAY);
+//
+//
+//		glfwSwapBuffers(window);//to swap the new color for window
+//		glfwPollEvents();
+//	}
+//	glfwTerminate();
+//
+//}
+//void main()
+//{
+//	ligHouse();
+//}
+
+
+
+//
 
 #include<GL/glew.h>
 #include<GLFW/glfw3.h>
@@ -2196,89 +2369,34 @@ void main()
 	// make the window context current
 	glfwMakeContextCurrent(window);
 
-	float triangleOne[] =
+	float vertices[] =
 	{
-		//base
-		-0.9,-0.9,0,
-		-0.9,-0.7,0,
+		-1, -1, -1,   
+		-1, -1,  1,   
+		-1,  1,  1,   
+		-1,  1, -1,//left
 
-		-0.9,-0.7,0,
-		0.9,-0.7,0,
+	     1, -1, -1,   
+		 1, 1, -1,   
+		 1, 1, 1,   
+		 1, -1, 1,//right
 
-		0.9,-0.7,0,
-		0.9,-0.9,0,
-
-		0.9,-0.9,0,
-		-0.9,-0.9,0,
+	    -1, -1, -1,   -1, -1, 0.4,   1, -1, 0.4,   1, -1, -1,//bottom
+	-1, 1, -1,   -1, 0.4, 1,   1, 0.4, 1,   1, 1, -1,//top
+	-0.5, -1, -1,   -0.5, 0.5, -1,   0.5,  0.5, -1,  0.5, -1, -1,//back
+	-0.25, -0.25, 1,  -0.25, 0.25, 1,  0.25, 0.25, 1,  0.25, -0.25, 1//front
 
 	};
 
-	float home[] =
+	GLfloat colors[] =
 	{
-		//home
-		-0.6,-0.4,0,
-		-0.1,-0.4,0,
-
-		-0.1,-0.4,0,
-		-0.1,-0.7,0,
-
-		-0.6,-0.4,0,
-		-0.6,-0.7,0,
-
-		-0.6,-0.4,0,
-		-0.35,-0.1,0,
-
-		-0.35,-0.1,0,
-		-0.1,-0.4,0
+	0, 0, 0,   0, 0, 1,   0, 1, 1,   0, 1, 0,
+	1, 0, 0,   1, 0, 1,   1, 1, 1,   1, 1, 0,
+	0, 0, 0,   0, 0, 1,   1, 0, 1,   1, 0, 0,
+	0, 1, 0,   0, 1, 1,   1, 1, 1,   1, 1, 0,
+	0, 0, 0,   0, 1, 0,   1, 1, 0,   1, 0, 0,
+	0, 0, 1,   0, 1, 1,   1, 1, 1,   1, 0, 1
 	};
-
-	float homeCol[] =
-	{
-		1,0,0,
-		1,0,1,
-		1,1,0,
-		1,1,0,
-		0,0,1,
-		0,1,0,
-		1,0,1,
-		1,1,0,
-		0,1,1,
-		0,1,0
-	};
-
-	float lightHouse[] =
-	{
-		//lighthouse
-		0.1,-0.7,0,
-		0.4,0.5,0,
-
-		0.4,0.5,0,
-		0.6,0.5,0,
-
-		0.6,0.5,0,
-		0.8,-0.7,0,
-
-		0.3,0.5,0,
-		0.7,0.5,0,
-
-		0.7,0.5,0,
-		0.7,0.6,0,
-
-		0.7,0.6,0,
-		0.3,0.6,0,
-
-		0.3,0.6,0,
-		0.3,0.5,0,
-
-		//triangle
-		0.4,0.6,0,
-		0.5,0.8,0,
-
-		0.5,0.8,0,
-		0.6,0.6,0
-	};
-
-
 
 	//gameloop
 	while (!glfwWindowShouldClose(window))
@@ -2287,35 +2405,19 @@ void main()
 		glClearColor(0.5, 1, 1, 0); //for rgb color change
 		glClear(GL_COLOR_BUFFER_BIT);//to clear the buffer
 
-
 		//draw triangle
-		glColor3f(1, 0, 0);
-		glLineWidth(20);
+		//glColor3f(1, 0, 0);
 		glEnableClientState(GL_VERTEX_ARRAY);
-		glVertexPointer(3, GL_FLOAT, 0, triangleOne);
-		glDrawArrays(GL_LINES, 0, 8);
-		glDisableClientState(GL_VERTEX_ARRAY);
-
-		//home
-		//glColor3f(0, 0, 1);
-		glLineWidth(20);
-		glEnableClientState(GL_VERTEX_ARRAY);
-		//color
 		glEnableClientState(GL_COLOR_ARRAY);
-		glVertexPointer(3, GL_FLOAT, 0, home);
-		glColorPointer(3, GL_FLOAT, 0, homeCol);
-		glDrawArrays(GL_LINES, 0, 10);
+		glVertexPointer(3, GL_FLOAT, 0, vertices);
+		glColorPointer(3, GL_FLOAT, 0, colors);
+		glDrawArrays(GL_QUADS, 0, 24);
 		glDisableClientState(GL_COLOR_ARRAY);
 		glDisableClientState(GL_VERTEX_ARRAY);
 
-		//ligthouse
-		glColor3f(0, 1, 0);
-		glLineWidth(20);
-		glEnableClientState(GL_VERTEX_ARRAY);
-		glVertexPointer(3, GL_FLOAT, 0, lightHouse);
-		glDrawArrays(GL_LINES, 0, 18);
-		glDisableClientState(GL_VERTEX_ARRAY);
-
+		glLoadIdentity();
+		gluPerspective(100, wid/height, 1.2, 10);
+		glTranslatef(0, 0, -1);
 
 		glfwSwapBuffers(window);//to swap the new color for window
 		glfwPollEvents();
