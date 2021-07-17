@@ -2171,170 +2171,170 @@
 
 //23 lighthouse by triangle or polygon
 
-//#include<GL/glew.h>
-//#include<GLFW/glfw3.h>
-//#include<iostream>
-//
-//using namespace std;
-//
-//void ligHouse()
-//{
-//	GLint wid = 800; //*window variable
-//	GLint height = 800; //*window variable
-//	GLFWwindow* window; //pointer var as window that will hold address only 
-//	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
-//	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
-//
-//	// make the window context current
-//	glfwMakeContextCurrent(window);
-//
-//	float triangleOne[] =
-//	{
-//		//base
-//		-0.9,-0.9,0,
-//		-0.9,-0.7,0,
-//
-//		-0.9,-0.7,0,
-//		0.9,-0.7,0,
-//
-//		0.9,-0.7,0,
-//		0.9,-0.9,0,
-//
-//		0.9,-0.9,0,
-//		-0.9,-0.9,0,
-//
-//	};
-//
-//	float home[] =
-//	{
-//		//home
-//		-0.6,-0.4,0,
-//		-0.1,-0.4,0,
-//
-//		-0.1,-0.4,0,
-//		-0.1,-0.7,0,
-//
-//		-0.6,-0.4,0,
-//		-0.6,-0.7,0,
-//
-//		-0.6,-0.4,0,
-//		-0.35,-0.1,0,
-//
-//		-0.35,-0.1,0,
-//		-0.1,-0.4,0
-//	};
-//
-//	float homeCol[] =
-//	{
-//		1,0,0,
-//		1,0,1,
-//		1,1,0,
-//		1,1,0,
-//		0,0,1,
-//		0,1,0,
-//		1,0,1,
-//		1,1,0,
-//		0,1,1,
-//		0,1,0
-//	};
-//
-//	float lightHouse[] =
-//	{
-//		//lighthouse
-//		0.1,-0.7,0,
-//		0.4,0.5,0,
-//
-//		0.4,0.5,0,
-//		0.6,0.5,0,
-//
-//		0.6,0.5,0,
-//		0.8,-0.7,0,
-//
-//		0.3,0.5,0,
-//		0.7,0.5,0,
-//
-//		0.7,0.5,0,
-//		0.7,0.6,0,
-//
-//		0.7,0.6,0,
-//		0.3,0.6,0,
-//
-//		0.3,0.6,0,
-//		0.3,0.5,0,
-//
-//		//triangle
-//		0.4,0.6,0,
-//		0.5,0.8,0,
-//
-//		0.5,0.8,0,
-//		0.6,0.6,0
-//	};
-//
-//
-//
-//	//gameloop
-//	while (!glfwWindowShouldClose(window))
-//	{
-//		//for the bg color
-//		glClearColor(0, 0, 0, 0); //for rgb color change
-//		glClear(GL_COLOR_BUFFER_BIT);//to clear the buffer
-//
-//
-//		//draw triangle
-//		glColor3f(1, 0, 0);
-//		glLineWidth(20);
-//		glEnableClientState(GL_VERTEX_ARRAY);
-//		glVertexPointer(3, GL_FLOAT, 0, triangleOne);
-//		glDrawArrays(GL_LINES, 0, 8);
-//		glDisableClientState(GL_VERTEX_ARRAY);
-//
-//		//home
-//		//glColor3f(0, 0, 1);
-//		glLineWidth(20);
-//		glEnableClientState(GL_VERTEX_ARRAY);
-//		//color
-//		glEnableClientState(GL_COLOR_ARRAY);
-//		glVertexPointer(3, GL_FLOAT, 0, home);
-//		glColorPointer(3, GL_FLOAT, 0, homeCol);
-//		glDrawArrays(GL_LINES, 0, 10);
-//		glDisableClientState(GL_COLOR_ARRAY);
-//		glDisableClientState(GL_VERTEX_ARRAY);
-//
-//		//ligthouse
-//		glColor3f(0, 1, 0);
-//		glLineWidth(20);
-//		glEnableClientState(GL_VERTEX_ARRAY);
-//		glVertexPointer(3, GL_FLOAT, 0, lightHouse);
-//		glDrawArrays(GL_LINES, 0, 18);
-//		glDisableClientState(GL_VERTEX_ARRAY);
-//
-//
-//		glfwSwapBuffers(window);//to swap the new color for window
-//		glfwPollEvents();
-//	}
-//	glfwTerminate();
-//
-//}
-//void main()
-//{
-//	ligHouse();
-//}
+////#include<GL/glew.h>
+////#include<GLFW/glfw3.h>
+////#include<iostream>
+////
+////using namespace std;
+////
+////void ligHouse()
+////{
+////	GLint wid = 800; //*window variable
+////	GLint height = 800; //*window variable
+////	GLFWwindow* window; //pointer var as window that will hold address only 
+////	glfwInit();
+////	if (!glfwInit())
+////	{
+////		cout << "glfwINit function error!!" << endl;
+////	}
+////	else
+////	{
+////		cout << "glfwINit function is available!!" << endl;
+////	}
+////	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
+////	if (!window)
+////	{
+////		cout << "Window not available!!" << endl;
+////	}
+////	else
+////	{
+////		cout << "Window is opening successfully!!" << endl;
+////	}
+////
+////	// make the window context current
+////	glfwMakeContextCurrent(window);
+////
+////	float triangleOne[] =
+////	{
+////		//base
+////		-0.9,-0.9,0,
+////		-0.9,-0.7,0,
+////
+////		-0.9,-0.7,0,
+////		0.9,-0.7,0,
+////
+////		0.9,-0.7,0,
+////		0.9,-0.9,0,
+////
+////		0.9,-0.9,0,
+////		-0.9,-0.9,0,
+////
+////	};
+////
+////	float home[] =
+////	{
+////		//home
+////		-0.6,-0.4,0,
+////		-0.1,-0.4,0,
+////
+////		-0.1,-0.4,0,
+////		-0.1,-0.7,0,
+////
+////		-0.6,-0.4,0,
+////		-0.6,-0.7,0,
+////
+////		-0.6,-0.4,0,
+////		-0.35,-0.1,0,
+////
+////		-0.35,-0.1,0,
+////		-0.1,-0.4,0
+////	};
+////
+////	float homeCol[] =
+////	{
+////		1,0,0,
+////		1,0,1,
+////		1,1,0,
+////		1,1,0,
+////		0,0,1,
+////		0,1,0,
+////		1,0,1,
+////		1,1,0,
+////		0,1,1,
+////		0,1,0
+////	};
+////
+////	float lightHouse[] =
+////	{
+////		//lighthouse
+////		0.1,-0.7,0,
+////		0.4,0.5,0,
+////
+////		0.4,0.5,0,
+////		0.6,0.5,0,
+////
+////		0.6,0.5,0,
+////		0.8,-0.7,0,
+////
+////		0.3,0.5,0,
+////		0.7,0.5,0,
+////
+////		0.7,0.5,0,
+////		0.7,0.6,0,
+////
+////		0.7,0.6,0,
+////		0.3,0.6,0,
+////
+////		0.3,0.6,0,
+////		0.3,0.5,0,
+////
+////		//triangle
+////		0.4,0.6,0,
+////		0.5,0.8,0,
+////
+////		0.5,0.8,0,
+////		0.6,0.6,0
+////	};
+////
+////
+////
+////	//gameloop
+////	while (!glfwWindowShouldClose(window))
+////	{
+////		//for the bg color
+////		glClearColor(0, 0, 0, 0); //for rgb color change
+////		glClear(GL_COLOR_BUFFER_BIT);//to clear the buffer
+////
+////
+////		//draw triangle
+////		glColor3f(1, 0, 0);
+////		glLineWidth(20);
+////		glEnableClientState(GL_VERTEX_ARRAY);
+////		glVertexPointer(3, GL_FLOAT, 0, triangleOne);
+////		glDrawArrays(GL_LINES, 0, 8);
+////		glDisableClientState(GL_VERTEX_ARRAY);
+////
+////		//home
+////		//glColor3f(0, 0, 1);
+////		glLineWidth(20);
+////		glEnableClientState(GL_VERTEX_ARRAY);
+////		//color
+////		glEnableClientState(GL_COLOR_ARRAY);
+////		glVertexPointer(3, GL_FLOAT, 0, home);
+////		glColorPointer(3, GL_FLOAT, 0, homeCol);
+////		glDrawArrays(GL_LINES, 0, 10);
+////		glDisableClientState(GL_COLOR_ARRAY);
+////		glDisableClientState(GL_VERTEX_ARRAY);
+////
+////		//ligthouse
+////		glColor3f(0, 1, 0);
+////		glLineWidth(20);
+////		glEnableClientState(GL_VERTEX_ARRAY);
+////		glVertexPointer(3, GL_FLOAT, 0, lightHouse);
+////		glDrawArrays(GL_LINES, 0, 18);
+////		glDisableClientState(GL_VERTEX_ARRAY);
+////
+////
+////		glfwSwapBuffers(window);//to swap the new color for window
+////		glfwPollEvents();
+////	}
+////	glfwTerminate();
+////
+////}
+////void main()
+////{
+////	ligHouse();
+////}
 
 
 
@@ -2468,20 +2468,6 @@
 //
 //	float vertices[] =
 //	{
-//		//		-1, -1, -1,   
-//		//		-1, -1,  1,   
-//		//		-1,  1,  1,   
-//		//		-1,  1, -1,//left
-//		//
-//		//	     1, -1, -1,   
-//		//		 1, 1, -1,   
-//		//		 1, 1, 1,   
-//		//		 1, -1, 1,//right
-//		//
-//		//	    -1, -1, -1,   -1, -1, 0.4,   1, -1, 0.4,   1, -1, -1,//bottom
-//		//	-1, 1, -1,   -1, 0.4, 1,   1, 0.4, 1,   1, 1, -1,//top
-//		//	-0.5, -1, -1,   -0.5, 0.5, -1,   0.5,  0.5, -1,  0.5, -1, -1,//back
-//		//	-0.25, -0.25, 1,  -0.25, 0.25, 1,  0.25, 0.25, 1,  0.25, -0.25, 1//front
 //		
 //		-0.4, -0.4, -0.4,  //A 
 //		-0.4, -0.4,  0.4,  //B 
@@ -2840,6 +2826,8 @@
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
 //	glfwSetKeyCallback(window, keyCall);
+//	glEnable(GL_DEPTH_TEST); // Depth Testing
+//
 //
 //	float vertices[] =
 //	{
@@ -2944,130 +2932,614 @@
 
 
 
-//light house
+//29 prism with keyboard rotation
+
+//#include<GL/glew.h>
+//#include<GLFW/glfw3.h>
+//#include<iostream>
+//using namespace std;
+//
+//void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods);
+//GLfloat rotationx, rotationy;
+//
+//void main()
+//{
+//	GLint wid = 800; //*window variable
+//	GLint height = 800; //*window variable
+//	GLFWwindow* window; //pointer var as window that will hold address only 
+//	glfwInit();
+//	if (!glfwInit())
+//	{
+//		cout << "glfwINit function error!!" << endl;
+//	}
+//	else
+//	{
+//		cout << "glfwINit function is available!!" << endl;
+//	}
+//	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
+//	if (!window)
+//	{
+//		cout << "Window not available!!" << endl;
+//	}
+//	else
+//	{
+//		cout << "Window is opening successfully!!" << endl;
+//	}
+//
+//	glfwMakeContextCurrent(window);
+//
+//	glfwSetKeyCallback(window, keyCall);
+//	glEnable(GL_DEPTH_TEST); // Depth Testing  
+//
+//
+//	float vertices[] =
+//	{
+//
+//		//rectangle
+//
+//		-1,-1,-1,  //a
+//		-1,-1,1,    //b   //bottom
+//		1,-1,1,     //c
+//
+//		1,-1,1,     //c
+//		1,-1,-1,   //d
+//		-1,-1,-1,  //a
+//
+//		//triangles
+//		-1,-1,1,    //b   
+//		1,-1,1,     //c    //front
+//		0.5,1,-0.5,  //e
+//
+//		1,-1,1,     //c
+//		1,-1,-1,   //d     //right
+//		0.5,1,-0.5, //e
+//
+//		1,-1,-1,   //d
+//		-1,-1,-1,  //a     //back
+//		0.5,1,-0.5, //e
+//
+//		-1,-1,-1,  //a
+//		-1,-1,1,    //b     //left
+//		0.5,1,-0.5, //e
+//	};
+//
+//	GLfloat colors[] =
+//	{
+//
+//	1, 0, 0,   1, 0, 0,   1, 0, 0,   1, 0, 0,
+//	1, 0, 0,   1, 0, 1,   1, 1, 1,   1, 1, 0,
+//	0, 0, 0,   0, 0, 1,   0, 1, 1,   0, 1, 0,
+//	0, 1, 0,   0, 1, 1,   1, 1, 1,   1, 1, 0,
+//	0, 0, 0,   0, 1, 0,   1, 1, 0,   1, 0, 0,
+//	0, 0, 1,   0, 1, 1,   1, 1, 1,   1, 0, 1
+//	};
+//
+//	//gameloop
+//	while (!glfwWindowShouldClose(window))
+//	{
+//		//for the bg color
+//		glClearColor(0,0,0, 0); //for rgb color change
+//		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);//to clear the buffer
+//
+//
+//		glMatrixMode(GL_PROJECTION_MATRIX);
+//		glLoadIdentity();
+//		gluPerspective(100, wid / height, 1.2, 10);
+//		glTranslatef(0, 0, -4);
+//
+//
+//		glRotatef(rotationx, 1, 0, -1);
+//		glRotatef(rotationy, 0, 1, -1);
+//
+//
+//		glEnableClientState(GL_VERTEX_ARRAY);
+//		glEnableClientState(GL_COLOR_ARRAY);
+//		glVertexPointer(3, GL_FLOAT, 0, vertices);
+//		glColorPointer(3, GL_FLOAT, 0, colors);
+//		glDrawArrays(GL_TRIANGLES, 0, 18);
+//		glDisableClientState(GL_COLOR_ARRAY);
+//		glDisableClientState(GL_VERTEX_ARRAY);
+//
+//		glfwSwapBuffers(window);//to swap the new color for window
+//		glfwPollEvents();
+//	}
+//	glfwTerminate();
+//}
+//
+//void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods)
+//{
+//	const GLfloat rotationspeed = 1;
+//	if (action == GLFW_PRESS || action == GLFW_REPEAT)
+//	{
+//		switch (key)
+//		{
+//		case GLFW_KEY_UP:
+//			rotationx -= rotationspeed;
+//			break;
+//		case GLFW_KEY_DOWN:
+//			rotationx += rotationspeed;
+//			break;
+//		case GLFW_KEY_LEFT:
+//			rotationy -= rotationspeed;
+//			break;
+//		case GLFW_KEY_RIGHT:
+//			rotationy += rotationspeed;
+//			break;
+//		default:
+//			break;
+//		}
+//	}
+//}
 
 
-#include<GL/glew.h>
-#include<GLFW/glfw3.h>
-#include<iostream>
+//30 cube with keyboard rotation
 
-using namespace std;
+//#include<GL/glew.h>
+//#include<GLFW/glfw3.h>
+//#include<iostream>
+//#define SCREEN_WIDTH 640//#define SCREEN_HEIGHT 480
+//
+//
+//using namespace std;
+//
+//void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods);
+//
+//GLfloat rotationx = 0;
+//GLfloat rotationy = 0;
+//
+//void main()
+//{
+//	GLFWwindow* window; //pointer var as window that will hold address only 
+//	glfwInit();
+//	if (!glfwInit())
+//	{
+//		cout << "glfwINit function error!!" << endl;
+//	}
+//	else
+//	{
+//		cout << "glfwINit function is available!!" << endl;
+//	}
+//	window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Window with background color", NULL, NULL); //*assigned window variable 
+//	if (!window)
+//	{
+//		cout << "Window not available!!" << endl;
+//	}
+//	else
+//	{
+//		cout << "Window is opening successfully!!" << endl;
+//	}
+//
+//	// make the window context current
+//	glfwMakeContextCurrent(window);
+//	glfwSetKeyCallback(window, keyCall);
+//	glEnable(GL_DEPTH_TEST); // Depth Testing
+//
+//	GLfloat centerPosX;
+//	GLfloat centerPosY;
+//	GLfloat centerPosZ;
+//	GLfloat edgeLength;
+//
+//	GLfloat halfSideLength = edgeLength * 0.5f;
+//	GLfloat halfScreenWidth = SCREEN_WIDTH / 3;//	GLfloat halfScreenHeight = SCREEN_HEIGHT / 3;
+//
+//
+//	float vertices[] =
+//	{
+//		//-1.5, -1.5, -1.5,  //A 
+//		//-1.5, -1.5,  1.5,  //B 
+//		//-1.5,  1.5,  1.5,  //C
+//		//-1.5,  1.5, -1.5,  //D //left
+//
+//		// 1.5, -1.5, -1.5,  //E
+//		// 1.5, 1.5, -1.5,   //F
+//		// 1.5, 1.5, 1.5,   //G
+//		// 1.5, -1.5, 1.5,  //H //right
+//
+//		//-1.5, -1.5, -1.5,  //A 
+//		//-1.5, -1.5, 1.5,  //B 
+//		//1.5, -1.5, 1.5 ,  //H 
+//		//1.5, -1.5, -1.5, //E //bottom
+//		//
+//		//-1.5,  1.5,  1.5,  //C
+//		//-1.5,  1.5, -1.5,  //D 
+//		//1.5, 1.5, -1.5,   //F
+//		// 1.5, 1.5, 1.5,   //G //top
+//
+//		// -1.5, -1.5, -1.5,  //A 
+//		//-1.5,  1.5, -1.5,  //D
+//		//1.5, 1.5, -1.5,   //F
+//		// 1.5, -1.5, -1.5,  //E //back
+//
+//		// -1.5, -1.5,  1.5,  //B 
+//		//-1.5,  1.5,  1.5,  //C
+//		//1.5, 1.5, 1.5,   //G
+//		// 1.5, -1.5, 1.5  //H  //front
+//
+//		// front face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+//
+//		// back face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top left
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom left
+//
+//		// left face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+//
+//		// right face
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+//
+//		// top face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // bottom left
+//
+//		// top face
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength  // bottom left
+//
+//	};
+//
+//	GLfloat colors[] =
+//	{
+//	1, 0, 0,   1, 0, 0,   1, 0, 0,   1, 0, 0,
+//	1, 0, 0,   1, 0, 1,   1, 1, 1,   1, 1, 0,
+//	0, 0, 0,   0, 0, 1,   0, 1, 1,   0, 1, 0,
+//	0, 1, 0,   0, 1, 1,   1, 1, 1,   1, 1, 0,
+//	0, 0, 0,   0, 1, 0,   1, 1, 0,   1, 0, 0,
+//	0, 0, 1,   0, 1, 1,   1, 1, 1,   1, 0, 1
+//	};
+//
+//
+//		glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);//for view your screen(1. x, 2. y,3. w, 4. h)
+//		glMatrixMode(GL_PROJECTION);// for change matrix mode
+//		glOrtho(0, SCREEN_WIDTH, 0, SCREEN_HEIGHT, 0.5, 0);//NEW COORDINATE SYSTEM/ hover mouse seeparameters(this represent the actual coordinate system which you changed)
+//		glMatrixMode(GL_MODELVIEW);//FOR DEFAULT MATRIX MODE(in future from here we will apply transformation)
+//
+//	//gameloop
+//	while (!glfwWindowShouldClose(window))
+//	{
+//		//for the bg color
+//		glClearColor(0, 0, 0, 0); //for rgb color change
+//		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);//to clear the buffer
+//
+//		glMatrixMode(GL_PROJECTION_MATRIX);
+//		glLoadIdentity();
+//		gluPerspective(100, SCREEN_WIDTH / SCREEN_HEIGHT, 1.2, 10);
+//		glTranslatef(-0.3, -0.3, -10);
+//
+//		glRotatef(rotationx, 1, 0, -1);
+//		glRotatef(rotationy, 0, 1, -1);
+//		//draw triangle
+//		//glColor3f(1, 0, 0);
+//		glEnableClientState(GL_VERTEX_ARRAY);
+//		glEnableClientState(GL_COLOR_ARRAY);
+//		glVertexPointer(3, GL_FLOAT, 0, vertices);
+//		glColorPointer(3, GL_FLOAT, 0, colors);
+//		glDrawArrays(GL_QUADS, 0, 24);
+//		glDisableClientState(GL_COLOR_ARRAY);
+//		glDisableClientState(GL_VERTEX_ARRAY);
+//
+//		glfwSwapBuffers(window);//to swap the new color for window
+//		glfwPollEvents();
+//	}
+//	glfwTerminate();
+//}
+//
+//void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods)
+//{
+//	const GLfloat rotationSpeed = 1;
+//	if (action == GLFW_PRESS || action == GLFW_REPEAT)
+//	{
+//		switch (key)
+//		{
+//		case GLFW_KEY_UP:
+//			rotationx -= rotationSpeed;
+//			break;
+//
+//		case GLFW_KEY_DOWN:
+//			rotationx += rotationSpeed;
+//			break;
+//
+//		case GLFW_KEY_LEFT:
+//			rotationy -= rotationSpeed;
+//			break;
+//
+//		case GLFW_KEY_RIGHT:
+//			rotationy += rotationSpeed;
+//			break;
+//		default:
+//			break;
+//		}
+//	}
+//}
 
-void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods);
 
-GLfloat rotationx = 0;
-GLfloat rotationy = 0;
 
-void main()
+
+//#include<GL/glew.h>
+//#include<GLFW/glfw3.h>
+//#include<iostream>
+//#define S_W 1000 //screen width
+//#define S_H 800	//screen height 
+//
+//using namespace std;
+//GLfloat rotationx = 0;
+//GLfloat rotationy = 0;
+//void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods);
+//
+//void main()
+//{
+//	GLint wid = 800; //*window variable
+//	GLint height = 800; //*window variable
+//	GLFWwindow* window; //pointer var as window that will hold address only 
+//	glfwInit();
+//	if (!glfwInit())
+//	{
+//		cout << "glfwINit function error!!" << endl;
+//	}
+//	else
+//	{
+//		cout << "glfwINit function is available!!" << endl;
+//	}
+//	window = glfwCreateWindow(S_W, S_H, "Window with background color", NULL, NULL); //*assigned window variable 
+//	if (!window)
+//	{
+//		cout << "Window not available!!" << endl;
+//	}
+//	else
+//	{
+//		cout << "Window is opening successfully!!" << endl;
+//	}
+//
+//	// make the window context current
+//	glfwMakeContextCurrent(window);
+//	glfwSetKeyCallback(window, keyCall);
+//	glEnable(GL_DEPTH_TEST); // Depth Testing
+//
+//	GLfloat halfScreenWidth = S_W / 3;//	GLfloat halfScreenHeight = S_H / 3;
+//
+//	GLfloat centerPosX = halfScreenWidth;
+//	GLfloat centerPosY= halfScreenHeight;
+//	GLfloat centerPosZ = -500;
+//	GLfloat edgeLength = 100;
+//
+//	GLfloat halfSideLength = edgeLength * 0.5f;
+//	
+//
+//	float triangle[] =
+//	{
+//		// front face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+//		
+//		// back face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top left
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom left
+//		
+//		// left face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+//		
+//		// right face
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+//		
+//		// top face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // bottom left
+//		
+//		// top face
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength  // bottom left
+//
+//	};
+//
+//	GLfloat colors[] =
+//	{
+//	1, 0, 0,   1, 0, 0,   1, 0, 0,   1, 0, 0,
+//	1, 0, 0,   1, 0, 1,   1, 1, 1,   1, 1, 0,
+//	0, 0, 0,   0, 0, 1,   0, 1, 1,   0, 1, 0,
+//	0, 1, 0,   0, 1, 1,   1, 1, 1,   1, 1, 0,
+//	0, 0, 0,   0, 1, 0,   1, 1, 0,   1, 0, 0,
+//	0, 0, 1,   0, 1, 1,   1, 1, 1,   1, 0, 1
+//	};
+//
+//	//FOR SCREEN RESOLUTION
+//	glViewport(0, 0, S_W, S_H);//for view your screen(1. x, 2. y,3. w, 4. h)
+//	glMatrixMode(GL_PROJECTION);// for change matrix mode
+//	glOrtho(0, S_W, 0, S_H, 0.5, 0);//NEW COORDINATE SYSTEM/ hover mouse seeparameters(this represent the actual coordinate system which you changed)
+//	glMatrixMode(GL_MODELVIEW);//FOR DEFAULT MATRIX MODE(in future from here we will apply transformation)
+//
+//
+//	
+//
+//	//gameloop
+//	while (!glfwWindowShouldClose(window))
+//	{
+//				//for the bg color
+//				glClearColor(0, 0, 0, 0); //for rgb color change
+//				glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);//to clear the buffer
+//		
+//				glPushMatrix();//				glTranslatef(halfScreenWidth, halfScreenHeight, -500);//				glRotatef(rotationx, 1, 0, 0);//				glRotatef(rotationy, 0, 1, 0);//				//glRotatef(rotationY, 0, 0, 1);//				glTranslatef(-halfScreenWidth, -halfScreenHeight, 500);
+//
+//		
+//				glRotatef(rotationx, 1, 0, -1);
+//				glRotatef(rotationy, 0, 1, -1);
+//				//draw triangle
+//				//glColor3f(1, 0, 0);
+//				glEnableClientState(GL_VERTEX_ARRAY);
+//				glEnableClientState(GL_COLOR_ARRAY);
+//				glVertexPointer(3, GL_FLOAT, 0, triangle);
+//				glColorPointer(3, GL_FLOAT, 0, colors);
+//				glDrawArrays(GL_QUADS, 0, 24);
+//				glDisableClientState(GL_COLOR_ARRAY);
+//				glDisableClientState(GL_VERTEX_ARRAY);
+//
+//		glPopMatrix();
+//		glfwSwapBuffers(window);//to swap the new color for window
+//		glfwPollEvents();
+//	}
+//	glfwTerminate();
+//}
+//
+//void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods)
+//{
+//	const GLfloat rotationSpeed = 1;
+//	if (action == GLFW_PRESS || action == GLFW_REPEAT)
+//	{
+//		switch (key)
+//		{
+//		case GLFW_KEY_UP:
+//			rotationx -= rotationSpeed;
+//			break;
+//
+//		case GLFW_KEY_DOWN:
+//			rotationx += rotationSpeed;
+//			break;
+//
+//		case GLFW_KEY_LEFT:
+//			rotationy -= rotationSpeed;
+//			break;
+//
+//		case GLFW_KEY_RIGHT:
+//			rotationy += rotationSpeed;
+//			break;
+//		default:
+//			break;
+//		}
+//	}
+//}
+
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+//#include <iostream>
+//#include <cstdlib>
+
+#define SCREEN_WIDTH 640
+#define SCREEN_HEIGHT 480
+
+void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
+void DrawCube(GLfloat centerPosX, GLfloat centerPosY, GLfloat centerPosZ, GLfloat edgeLength);
+
+GLfloat rotationx = 0.0f;
+GLfloat rotationy = 0.0f;
+//GLfloat rotationZ = 0.0f;
+
+int main(void)
 {
-	GLint wid = 1600; //*window variable
-	GLint height = 1600; //*window variable
-	GLFWwindow* window; //pointer var as window that will hold address only 
-	glfwInit();
+	GLFWwindow* window;
+
+	// Initialize the library
 	if (!glfwInit())
 	{
-		cout << "glfwINit function error!!" << endl;
+		return -1;
 	}
-	else
-	{
-		cout << "glfwINit function is available!!" << endl;
-	}
-	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
+
+	// Create a windowed mode window and its OpenGL context
+	window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Hello World", NULL, NULL);
+
+	glfwSetKeyCallback(window, keyCallback);
+	//glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
+
+
+	int screenWidth, screenHeight;
+	glfwGetFramebufferSize(window, &screenWidth, &screenHeight);
+
 	if (!window)
 	{
-		cout << "Window not available!!" << endl;
-	}
-	else
-	{
-		cout << "Window is opening successfully!!" << endl;
+		glfwTerminate();
+		return -1;
 	}
 
-	// make the window context current
+	// Make the window's context current
 	glfwMakeContextCurrent(window);
-	glfwSetKeyCallback(window, keyCall);
+	glEnable(GL_DEPTH_TEST);
+	glViewport(0.0f, 0.0f, screenWidth, screenHeight); // specifies the part of the window to which OpenGL will draw (in pixels), convert from normalised to pixels
+	glMatrixMode(GL_PROJECTION); // projection matrix defines the properties of the camera that views the objects in the world coordinate frame. Here you typically set the zoom factor, aspect ratio and the near and far clipping planes
+	glLoadIdentity(); // replace the current matrix with the identity matrix and starts us a fresh because matrix transforms such as glOrpho and glRotate cumulate, basically puts us at (0, 0, 0)
+	glOrtho(0, SCREEN_WIDTH, 0, SCREEN_HEIGHT, 0, 1000); // essentially set coordinate system
+	glMatrixMode(GL_MODELVIEW); // (default matrix mode) modelview matrix defines how your objects are transformed (meaning translation, rotation and scaling) in your world
+	glLoadIdentity(); // same as above comment
 
-	float vertices[] =
-	{
-		-1.5, -1.5,  1.5,  //a
-		-1.5,  1.5,  1.5,  //d
-		1.5, 1.5, 1.5,   //c
-		 1.5, -1.5, 1.5  //b  //front
+	GLfloat halfScreenWidth = SCREEN_WIDTH / 3;
+	GLfloat halfScreenHeight = SCREEN_HEIGHT / 3;
 
-		 - 1.5, -1.5,  1.5,  //a 
-		-1.5,  1.5,  1.5,  //d
-		
 
-		//-1.5, -1.5, -1.5,  //A 
-		//-1.5, -1.5,  1.5,  //B 
-		//-1.5,  1.5,  1.5,  //C
-		//-1.5,  1.5, -1.5,  //D //left
-
-		// 1.5, -1.5, -1.5,  //E
-		// 1.5, 1.5, -1.5,   //F
-		// 1.5, 1.5, 1.5,   //G
-		// 1.5, -1.5, 1.5,  //H //right
-
-		//-1.5, -1.5, -1.5,  //A 
-		//-1.5, -1.5, 1.5,  //B 
-		//1.5, -1.5, 1.5 ,  //H 
-		//1.5, -1.5, -1.5, //E //bottom
-
-		//-1.5,  1.5,  1.5,  //C
-		//-1.5,  1.5, -1.5,  //D 
-		//1.5, 1.5, -1.5,   //F
-		// 1.5, 1.5, 1.5,   //G //top
-
-		// -1.5, -1.5, -1.5,  //A 
-		//-1.5,  1.5, -1.5,  //D
-		//1.5, 1.5, -1.5,   //F
-		// 1.5, -1.5, -1.5,  //E //back
-
-		 
-	};
-
-	GLfloat colors[] =
-	{
-	1, 0, 0,   1, 0, 0,   1, 0, 0,   1, 0, 0
-	/*1, 0, 0,   1, 0, 1,   1, 1, 1,   1, 1, 0,
-	0, 0, 0,   0, 0, 1,   0, 1, 1,   0, 1, 0,
-	0, 1, 0,   0, 1, 1,   1, 1, 1,   1, 1, 0,
-	0, 0, 0,   0, 1, 0,   1, 1, 0,   1, 0, 0,
-	0, 0, 1,   0, 1, 1,   1, 1, 1,   1, 0, 1*/
-	};
-
-	//gameloop
+	// Loop until the user closes the window
 	while (!glfwWindowShouldClose(window))
 	{
-		//for the bg color
-		glClearColor(0, 0, 0, 0); //for rgb color change
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);//to clear the buffer
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		glMatrixMode(GL_PROJECTION_MATRIX);
-		glLoadIdentity();
-		gluPerspective(100, wid / height, 1.2, 10);
-		glTranslatef(-0.3, -0.3, -5);
+		// Render OpenGL here
 
-		glRotatef(rotationx, 1, 0, -1);
-		glRotatef(rotationy, 0, 1, -1);
-		//draw triangle
-		//glColor3f(1, 0, 0);
-		glEnableClientState(GL_VERTEX_ARRAY);
-		glEnableClientState(GL_COLOR_ARRAY);
-		glVertexPointer(3, GL_FLOAT, 0, vertices);
-		glColorPointer(3, GL_FLOAT, 0, colors);
-		glDrawArrays(GL_QUADS, 0, 24);
-		glDisableClientState(GL_COLOR_ARRAY);
-		glDisableClientState(GL_VERTEX_ARRAY);
+		glPushMatrix();
+		glTranslatef(halfScreenWidth, halfScreenHeight, -500);
+		glRotatef(rotationx, 1, 0, 0);
+		glRotatef(rotationy, 0, 1, 0);
+		//glRotatef(rotationY, 0, 0, 1);
+		glTranslatef(-halfScreenWidth, -halfScreenHeight, 500);
+		//glColor3f(1.0f, 0.0f,0.0f);
+		DrawCube(halfScreenWidth, halfScreenHeight, -500, 100);
+		glPopMatrix();
 
-		glfwSwapBuffers(window);//to swap the new color for window
+		glPushMatrix();
+		glTranslatef(halfScreenWidth, halfScreenHeight, -500);
+		glRotatef(rotationx, 1, 0, 0);
+		glRotatef(rotationy, 0, 1, 0);
+		//glRotatef(rotationY, 0, 0, 1);
+		glTranslatef(-halfScreenWidth, -halfScreenHeight, 500);
+		//glColor3f(1.0f, 0.0f,0.0f);
+		DrawCube(halfScreenWidth, halfScreenHeight, -200, 100);
+		glPopMatrix();
+
+
+		// Swap front and back buffers
+		glfwSwapBuffers(window);
+
+		// Poll for and process events
 		glfwPollEvents();
 	}
+
 	glfwTerminate();
+
+	return 0;
 }
 
-void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods)
+
+
+void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-	const GLfloat rotationSpeed = 1;
+	//std::cout << key << std::endl;
+
+	const GLfloat rotationSpeed = 10;
+
+	// actions are GLFW_PRESS, GLFW_RELEASE or GLFW_REPEAT
 	if (action == GLFW_PRESS || action == GLFW_REPEAT)
 	{
 		switch (key)
@@ -3075,20 +3547,108 @@ void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods)
 		case GLFW_KEY_UP:
 			rotationx -= rotationSpeed;
 			break;
-
 		case GLFW_KEY_DOWN:
 			rotationx += rotationSpeed;
 			break;
-
-		case GLFW_KEY_LEFT:
-			rotationy -= rotationSpeed;
-			break;
-
 		case GLFW_KEY_RIGHT:
 			rotationy += rotationSpeed;
 			break;
-		default:
+		case GLFW_KEY_LEFT:
+			rotationy -= rotationSpeed;
 			break;
 		}
 	}
 }
+
+
+void DrawCube(GLfloat centerPosX, GLfloat centerPosY, GLfloat centerPosZ, GLfloat edgeLength)
+{
+	GLfloat halfSideLength = edgeLength * 0.5f;
+
+	GLfloat vertices[] =
+	{
+		// front face
+		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top right
+		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom right
+		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+
+		// back face
+		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top left
+		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom left
+
+		// left face
+		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+
+		// right face
+		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+
+		// top face
+		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // bottom right
+		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // bottom left
+
+		// top face
+		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // top left
+		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // top right
+		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength  // bottom left
+	};
+
+
+
+	//color
+	GLfloat colors[] =
+	{
+	0, 0, 0,
+	0, 0, 1,
+	0, 1, 1,
+	0, 1, 0,
+	1, 0, 0,
+	1, 0, 1,
+	1, 1, 1,
+	1, 1, 0,
+	0, 0, 0,
+	0, 0, 1,
+	1, 0, 1,
+	1, 0, 0,
+	0, 1, 0,
+	0, 1, 1,
+	1, 1, 1,
+	1, 1, 0,
+	0, 0, 0,
+	0, 1, 0,
+	1, 1, 0,
+	1, 0, 0,
+	0, 0, 1,
+	0, 1, 1,
+	1, 1, 1,
+	1, 0, 1
+	};
+
+
+	//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glColor3f(colors[0], colors[1], colors[2]);
+	glEnableClientState(GL_VERTEX_ARRAY);
+	glVertexPointer(3, GL_FLOAT, 0, vertices);
+
+	//color enable
+	glEnableClientState(GL_COLOR_ARRAY);
+	glColorPointer(3, GL_FLOAT, 0, colors);
+
+	glDrawArrays(GL_QUADS, 0, 24);
+
+	glDisableClientState(GL_VERTEX_ARRAY);
+}//draw cube closed
+
+
+
