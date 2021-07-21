@@ -1,8 +1,7 @@
-// no 1: ProjectOne for set the graphical window without if else condition also works same 
+//1: Set the graphical window without if else condition.
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
-//
 //
 //void projectOne()
 //{
@@ -18,6 +17,7 @@
 //	}
 //	glfwTerminate();
 //}
+//
 //void main()
 //{
 //	projectOne();
@@ -25,7 +25,7 @@
 
 
 
-//// no 2: ProjectTwo for set the graphical window 
+//// 2: Set the graphical window.
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -66,12 +66,11 @@
 //void main()
 //{
 //	projectTwo();
-//	
 //}
 
 
 
-////no 3 : background window also assigned variable for window's width & height 
+//3 : Background window also assigned variable for window's width & height 
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -85,23 +84,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!"<<endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -120,7 +104,7 @@
 
 
 
-//no 4: Drawing in out graphical window
+//4: Drawing in out graphical window
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -134,23 +118,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -186,7 +155,7 @@
 
 
 
-//no 5: Drawing in out graphical window with own coordinates
+//5: Drawing in out graphical window with own coordinates
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -200,23 +169,7 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -252,7 +205,7 @@
 
 
 
-//no 6: Drawing square
+//6: Drawing square
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -266,23 +219,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -322,7 +260,7 @@
 
 
 
-//no 7: making hexagon
+//7: Making hexagon
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -335,24 +273,9 @@
 //	GLint wid = 800; //*window variable
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
+//
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -421,7 +344,7 @@
 
 
 
-//no 8: making hex and triangles in corner
+//8: Making hex and triangles in corner
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -435,23 +358,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -582,7 +490,7 @@
 
 
 
-//no 9: quad or square
+//9: quad or square
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -652,7 +560,7 @@
 
 
 
-//???????no 10: quad or square in different position
+//10: quad or square in different position ???????
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -666,23 +574,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -755,7 +648,7 @@
 
 
 
-//no 11: screen resolution for triangle(!!!!!!!must change the drawing vertices according to your width and height)
+//11: screen resolution for triangle(!!!!!!!must change the drawing vertices according to your width and height)
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -832,7 +725,7 @@
 
 
 
-//no 12: screen resolution for quad(!!!!!!!must change the drawing vertices according to your width and height)
+//12: screen resolution for quad(!!!!!!!must change the drawing vertices according to your width and height)
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -848,23 +741,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(S_W, S_H, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -911,7 +789,7 @@
 
 
 
-//no 13: screen resolution for point(!!!!!!!must change the drawing vertices according to your width and height)
+//  13: screen resolution for point(!!!!!!!must change the drawing vertices according to your width and height)
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -927,23 +805,9 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(S_W, S_H, "Window with background color", NULL, NULL); //*assigned window variable 
 //	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -989,7 +853,7 @@
 
 
 
-//no 14: multiple points(!!!!!!!must change the drawing vertices according to your width and height)
+//14: multiple points(!!!!!!!must change the drawing vertices according to your width and height)
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -1005,23 +869,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(S_W, S_H, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -1079,7 +928,7 @@
 
 
 
-//no 15:line(!!!!!!!must change the drawing vertices according to your width and height)
+//  15:line(!!!!!!!must change the drawing vertices according to your width and height)
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -1095,23 +944,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(S_W, S_H, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -1173,7 +1007,7 @@
 
 
 
-//no 16: home 
+//  16: home 
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -1186,23 +1020,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -1270,7 +1089,7 @@
 
 
 
-////n0 17: hollow home with colors
+//17: hollow home with colors
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -1283,23 +1102,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -1353,7 +1157,7 @@
 
 
 
-//no 18: filled home with colors
+//  18: filled home with colors
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -1366,23 +1170,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -1486,23 +1275,8 @@
 //	GLint height = 1000; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -1693,23 +1467,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -1857,7 +1616,7 @@
 
 
 
-//21lighthouse
+//21 lighthouse
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -1871,23 +1630,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -2002,11 +1746,7 @@
 
 
 
-////lighthouse by triangle or polygon
-
-
-
-//22
+//22 lighthouse by triangle or polygon
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -2020,23 +1760,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -2183,23 +1908,8 @@
 ////	GLint height = 800; //*window variable
 ////	GLFWwindow* window; //pointer var as window that will hold address only 
 ////	glfwInit();
-////	if (!glfwInit())
-////	{
-////		cout << "glfwINit function error!!" << endl;
-////	}
-////	else
-////	{
-////		cout << "glfwINit function is available!!" << endl;
-////	}
+////
 ////	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-////	if (!window)
-////	{
-////		cout << "Window not available!!" << endl;
-////	}
-////	else
-////	{
-////		cout << "Window is opening successfully!!" << endl;
-////	}
 ////
 ////	// make the window context current
 ////	glfwMakeContextCurrent(window);
@@ -2352,23 +2062,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -2445,23 +2140,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -2572,23 +2252,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -2675,23 +2340,8 @@
 //	GLint height = 800; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -2805,23 +2455,8 @@
 //	GLint height = 1600; //*window variable
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -3091,23 +2726,8 @@
 //{
 //	GLFWwindow* window; //pointer var as window that will hold address only 
 //	glfwInit();
-//	if (!glfwInit())
-//	{
-//		cout << "glfwINit function error!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "glfwINit function is available!!" << endl;
-//	}
+//
 //	window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Window with background color", NULL, NULL); //*assigned window variable 
-//	if (!window)
-//	{
-//		cout << "Window not available!!" << endl;
-//	}
-//	else
-//	{
-//		cout << "Window is opening successfully!!" << endl;
-//	}
 //
 //	// make the window context current
 //	glfwMakeContextCurrent(window);
@@ -3269,6 +2889,7 @@
 
 
 
+//31 sirs code for 4 moving and rotating triangle
 
 //#include<GL/glew.h>
 //#include<GLFW/glfw3.h>
@@ -3435,220 +3056,241 @@
 //		}
 //	}
 //}
-
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
-//#include <iostream>
-//#include <cstdlib>
-
-#define SCREEN_WIDTH 640
-#define SCREEN_HEIGHT 480
-
-void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
-void DrawCube(GLfloat centerPosX, GLfloat centerPosY, GLfloat centerPosZ, GLfloat edgeLength);
-
-GLfloat rotationx = 0.0f;
-GLfloat rotationy = 0.0f;
-//GLfloat rotationZ = 0.0f;
-
-int main(void)
-{
-	GLFWwindow* window;
-
-	// Initialize the library
-	if (!glfwInit())
-	{
-		return -1;
-	}
-
-	// Create a windowed mode window and its OpenGL context
-	window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Hello World", NULL, NULL);
-
-	glfwSetKeyCallback(window, keyCallback);
-	//glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
-
-
-	int screenWidth, screenHeight;
-	glfwGetFramebufferSize(window, &screenWidth, &screenHeight);
-
-	if (!window)
-	{
-		glfwTerminate();
-		return -1;
-	}
-
-	// Make the window's context current
-	glfwMakeContextCurrent(window);
-	glEnable(GL_DEPTH_TEST);
-	glViewport(0.0f, 0.0f, screenWidth, screenHeight); // specifies the part of the window to which OpenGL will draw (in pixels), convert from normalised to pixels
-	glMatrixMode(GL_PROJECTION); // projection matrix defines the properties of the camera that views the objects in the world coordinate frame. Here you typically set the zoom factor, aspect ratio and the near and far clipping planes
-	glLoadIdentity(); // replace the current matrix with the identity matrix and starts us a fresh because matrix transforms such as glOrpho and glRotate cumulate, basically puts us at (0, 0, 0)
-	glOrtho(0, SCREEN_WIDTH, 0, SCREEN_HEIGHT, 0, 1000); // essentially set coordinate system
-	glMatrixMode(GL_MODELVIEW); // (default matrix mode) modelview matrix defines how your objects are transformed (meaning translation, rotation and scaling) in your world
-	glLoadIdentity(); // same as above comment
-
-	GLfloat halfScreenWidth = SCREEN_WIDTH / 3;
-	GLfloat halfScreenHeight = SCREEN_HEIGHT / 3;
-
-
-	// Loop until the user closes the window
-	while (!glfwWindowShouldClose(window))
-	{
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-		// Render OpenGL here
-
-		glPushMatrix();
-		glTranslatef(halfScreenWidth, halfScreenHeight, -500);
-		glRotatef(rotationx, 1, 0, 0);
-		glRotatef(rotationy, 0, 1, 0);
-		//glRotatef(rotationY, 0, 0, 1);
-		glTranslatef(-halfScreenWidth, -halfScreenHeight, 500);
-		//glColor3f(1.0f, 0.0f,0.0f);
-		DrawCube(halfScreenWidth, halfScreenHeight, -500, 100);
-		glPopMatrix();
-
-		glPushMatrix();
-		glTranslatef(halfScreenWidth, halfScreenHeight, -500);
-		glRotatef(rotationx, 1, 0, 0);
-		glRotatef(rotationy, 0, 1, 0);
-		//glRotatef(rotationY, 0, 0, 1);
-		glTranslatef(-halfScreenWidth, -halfScreenHeight, 500);
-		//glColor3f(1.0f, 0.0f,0.0f);
-		DrawCube(halfScreenWidth, halfScreenHeight, -200, 100);
-		glPopMatrix();
-
-
-		// Swap front and back buffers
-		glfwSwapBuffers(window);
-
-		// Poll for and process events
-		glfwPollEvents();
-	}
-
-	glfwTerminate();
-
-	return 0;
-}
-
-
-
-void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
-{
-	//std::cout << key << std::endl;
-
-	const GLfloat rotationSpeed = 10;
-
-	// actions are GLFW_PRESS, GLFW_RELEASE or GLFW_REPEAT
-	if (action == GLFW_PRESS || action == GLFW_REPEAT)
-	{
-		switch (key)
-		{
-		case GLFW_KEY_UP:
-			rotationx -= rotationSpeed;
-			break;
-		case GLFW_KEY_DOWN:
-			rotationx += rotationSpeed;
-			break;
-		case GLFW_KEY_RIGHT:
-			rotationy += rotationSpeed;
-			break;
-		case GLFW_KEY_LEFT:
-			rotationy -= rotationSpeed;
-			break;
-		}
-	}
-}
-
-
-void DrawCube(GLfloat centerPosX, GLfloat centerPosY, GLfloat centerPosZ, GLfloat edgeLength)
-{
-	GLfloat halfSideLength = edgeLength * 0.5f;
-
-	GLfloat vertices[] =
-	{
-		// front face
-		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
-		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top right
-		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom right
-		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
-
-		// back face
-		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top left
-		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
-		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
-		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom left
-
-		// left face
-		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
-		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
-		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
-		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
-
-		// right face
-		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
-		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
-		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
-		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
-
-		// top face
-		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
-		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
-		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // bottom right
-		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // bottom left
-
-		// top face
-		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // top left
-		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // top right
-		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
-		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength  // bottom left
-	};
-
-
-
-	//color
-	GLfloat colors[] =
-	{
-	0, 0, 0,
-	0, 0, 1,
-	0, 1, 1,
-	0, 1, 0,
-	1, 0, 0,
-	1, 0, 1,
-	1, 1, 1,
-	1, 1, 0,
-	0, 0, 0,
-	0, 0, 1,
-	1, 0, 1,
-	1, 0, 0,
-	0, 1, 0,
-	0, 1, 1,
-	1, 1, 1,
-	1, 1, 0,
-	0, 0, 0,
-	0, 1, 0,
-	1, 1, 0,
-	1, 0, 0,
-	0, 0, 1,
-	0, 1, 1,
-	1, 1, 1,
-	1, 0, 1
-	};
-
-
-	//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-	glColor3f(colors[0], colors[1], colors[2]);
-	glEnableClientState(GL_VERTEX_ARRAY);
-	glVertexPointer(3, GL_FLOAT, 0, vertices);
-
-	//color enable
-	glEnableClientState(GL_COLOR_ARRAY);
-	glColorPointer(3, GL_FLOAT, 0, colors);
-
-	glDrawArrays(GL_QUADS, 0, 24);
-
-	glDisableClientState(GL_VERTEX_ARRAY);
-}//draw cube closed
+//
+//#include <GL/glew.h>
+//#include <GLFW/glfw3.h>
+////#include <iostream>
+////#include <cstdlib>
+//
+//#define SCREEN_WIDTH 640
+//#define SCREEN_HEIGHT 480
+//
+//void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
+//void DrawCube(GLfloat centerPosX, GLfloat centerPosY, GLfloat centerPosZ, GLfloat edgeLength);
+//
+//GLfloat rotationx = 0.0f;
+//GLfloat rotationy = 0.0f;
+////GLfloat rotationZ = 0.0f;
+//
+//int main(void)
+//{
+//	GLFWwindow* window;
+//
+//	// Initialize the library
+//	if (!glfwInit())
+//	{
+//		return -1;
+//	}
+//
+//	// Create a windowed mode window and its OpenGL context
+//	window = glfwCreateWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "Hello World", NULL, NULL);
+//
+//	glfwSetKeyCallback(window, keyCallback);
+//	//glfwSetInputMode(window, GLFW_STICKY_KEYS, 1);
+//
+//
+//	int screenWidth, screenHeight;
+//	glfwGetFramebufferSize(window, &screenWidth, &screenHeight);
+//
+//	if (!window)
+//	{
+//		glfwTerminate();
+//		return -1;
+//	}
+//
+//	// Make the window's context current
+//	glfwMakeContextCurrent(window);
+//	glEnable(GL_DEPTH_TEST);
+//	glViewport(0.0f, 0.0f, screenWidth, screenHeight); // specifies the part of the window to which OpenGL will draw (in pixels), convert from normalised to pixels
+//	glMatrixMode(GL_PROJECTION); // projection matrix defines the properties of the camera that views the objects in the world coordinate frame. Here you typically set the zoom factor, aspect ratio and the near and far clipping planes
+//	glLoadIdentity(); // replace the current matrix with the identity matrix and starts us a fresh because matrix transforms such as glOrpho and glRotate cumulate, basically puts us at (0, 0, 0)
+//	glOrtho(0, SCREEN_WIDTH, 0, SCREEN_HEIGHT, 0, 1000); // essentially set coordinate system
+//	glMatrixMode(GL_MODELVIEW); // (default matrix mode) modelview matrix defines how your objects are transformed (meaning translation, rotation and scaling) in your world
+//	glLoadIdentity(); // same as above comment
+//
+//	GLfloat halfScreenWidth = SCREEN_WIDTH / 3;
+//	GLfloat halfScreenHeight = SCREEN_HEIGHT / 3;
+//
+//
+//	// Loop until the user closes the window
+//	while (!glfwWindowShouldClose(window))
+//	{
+//		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+//
+//		// Render OpenGL here
+//
+//		glPushMatrix();
+//		glTranslatef(halfScreenWidth, halfScreenHeight, -500);
+//		glRotatef(rotationx, 1, 0, 0);
+//		glRotatef(rotationy, 0, 1, 0);
+//		//glRotatef(rotationY, 0, 0, 1);
+//		glTranslatef(-halfScreenWidth, -halfScreenHeight, 500);
+//		//glColor3f(1.0f, 0.0f,0.0f);
+//		DrawCube(halfScreenWidth, halfScreenHeight, -500, 100);
+//		//glPopMatrix();
+//
+//		//2nd cube
+//		glPushMatrix();
+//		glTranslatef(halfScreenWidth, halfScreenHeight + 200, -500);
+//		glRotatef(rotationx, 1, 0, 0);
+//		glRotatef(rotationy, 0, 1, 0);
+//		//glRotatef(rotationY, 0, 0, 1);
+//		glTranslatef(-halfScreenWidth, -(halfScreenHeight + 200), 500);
+//		//glColor3f(1.0f, 0.0f,0.0f);
+//		DrawCube(halfScreenWidth, halfScreenHeight + 200 , -500, 50);
+//		glPopMatrix();
+//
+//		//3rd cube
+//		glPushMatrix();
+//		glTranslatef(halfScreenWidth + 200, halfScreenHeight + 200, -500);
+//		glRotatef(rotationx, 1, 0, 0);
+//		glRotatef(rotationy, 0, 1, 0);
+//		//glRotatef(rotationY, 0, 0, 1);
+//		glTranslatef(-(halfScreenWidth +200), -(halfScreenHeight + 200), 500);
+//		//glColor3f(1.0f, 0.0f,0.0f);
+//		DrawCube(halfScreenWidth + 200, halfScreenHeight + 200, -500, 50);
+//		//glPopMatrix();
+//
+//		//4th cube
+//		glPushMatrix();
+//		glTranslatef(halfScreenWidth +200, halfScreenHeight, -500);
+//		glRotatef(rotationx, 1, 0, 0);
+//		glRotatef(rotationy, 0, 1, 0);
+//		//glRotatef(rotationY, 0, 0, 1);
+//		glTranslatef(-(halfScreenWidth +200), -halfScreenHeight, 500);
+//		//glColor3f(1.0f, 0.0f,0.0f);
+//		DrawCube(halfScreenWidth + 200, halfScreenHeight, -500, 100);
+//		glPopMatrix();
+//		// Swap front and back buffers
+//		glfwSwapBuffers(window);
+//
+//		// Poll for and process events
+//		glfwPollEvents();
+//	}
+//
+//	glfwTerminate();
+//
+//	return 0;
+//}
+//
+//
+//
+//void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods)
+//{
+//	//std::cout << key << std::endl;
+//
+//	const GLfloat rotationSpeed = 10;
+//
+//	// actions are GLFW_PRESS, GLFW_RELEASE or GLFW_REPEAT
+//	if (action == GLFW_PRESS || action == GLFW_REPEAT)
+//	{
+//		switch (key)
+//		{
+//		case GLFW_KEY_UP:
+//			rotationx -= rotationSpeed;
+//			break;
+//		case GLFW_KEY_DOWN:
+//			rotationx += rotationSpeed;
+//			break;
+//		case GLFW_KEY_RIGHT:
+//			rotationy += rotationSpeed;
+//			break;
+//		case GLFW_KEY_LEFT:
+//			rotationy -= rotationSpeed;
+//			break;
+//		}
+//	}
+//}
+//
+//
+//void DrawCube(GLfloat centerPosX, GLfloat centerPosY, GLfloat centerPosZ, GLfloat edgeLength)
+//{
+//	GLfloat halfSideLength = edgeLength * 0.5f;
+//
+//	GLfloat vertices[] =
+//	{
+//		// front face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+//
+//		// back face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top left
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom left
+//
+//		// left face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+//
+//		// right face
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // bottom left
+//
+//		// top face
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX - halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX + halfSideLength, centerPosY + halfSideLength, centerPosZ + halfSideLength, // bottom left
+//
+//		// top face
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength, // top left
+//		centerPosX - halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // top right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ - halfSideLength, // bottom right
+//		centerPosX + halfSideLength, centerPosY - halfSideLength, centerPosZ + halfSideLength  // bottom left
+//	};
+//
+//
+//
+//	//color
+//	GLfloat colors[] =
+//	{
+//	0, 0, 0,
+//	0, 0, 1,
+//	0, 1, 1,
+//	0, 1, 0,
+//	1, 0, 0,
+//	1, 0, 1,
+//	1, 1, 1,
+//	1, 1, 0,
+//	0, 0, 0,
+//	0, 0, 1,
+//	1, 0, 1,
+//	1, 0, 0,
+//	0, 1, 0,
+//	0, 1, 1,
+//	1, 1, 1,
+//	1, 1, 0,
+//	0, 0, 0,
+//	0, 1, 0,
+//	1, 1, 0,
+//	1, 0, 0,
+//	0, 0, 1,
+//	0, 1, 1,
+//	1, 1, 1,
+//	1, 0, 1
+//	};
+//
+//
+//	//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+//	glColor3f(colors[0], colors[1], colors[2]);
+//	glEnableClientState(GL_VERTEX_ARRAY);
+//	glVertexPointer(3, GL_FLOAT, 0, vertices);
+//
+//	//color enable
+//	glEnableClientState(GL_COLOR_ARRAY);
+//	glColorPointer(3, GL_FLOAT, 0, colors);
+//
+//	glDrawArrays(GL_QUADS, 0, 24);
+//
+//	glDisableClientState(GL_VERTEX_ARRAY);
+//}//draw cube closed
 
 
 
