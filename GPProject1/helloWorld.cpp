@@ -2350,9 +2350,6 @@
 //GLfloat rotationx = 0;
 //GLfloat rotationy = 0;
 //
-//GLfloat translatex = 0;
-//GLfloat translatey = 0;
-//
 //void main()
 //{
 //	GLint wid = 800; //*window variable
@@ -2408,7 +2405,7 @@
 //		glTranslatef(-0.3, -0.3, -5);
 //		glRotatef(rotationx, 1, 0, -1);
 //		glRotatef(rotationy, 0, 1, -1);
-//		glTranslatef(5, 0, 0);
+//
 //		//draw triangle
 //		//glColor3f(1, 0, 0);
 //		glEnableClientState(GL_VERTEX_ARRAY);
@@ -4332,11 +4329,121 @@
 
 //35 translate without keyboard
 
+//#include<GL/glew.h>
+//#include<GLFW/glfw3.h>
+//#include<iostream>
+//
+//using namespace std;
+//
+//void main()
+//{
+//	GLint wid = 800; //*window variable
+//	GLint height = 800; //*window variable
+//	GLFWwindow* window; //pointer var as window that will hold address only 
+//	glfwInit();
+//
+//	window = glfwCreateWindow(wid, height, "Window with background color", NULL, NULL); //*assigned window variable 
+//
+//	// make the window context current
+//	glfwMakeContextCurrent(window);
+//
+//	float vertices[] =
+//	{
+//		-1, -1, -1,  //A 
+//		-1, -1,  1,  //B 
+//		-1,  1,  1,  //C
+//		-1,  1, -1,  //D //left
+//
+//		 1, -1, -1,  //E
+//		 1, 1, -1,   //F
+//		 1, 1, 1,   //G
+//		 1, -1, 1,  //H //right
+//
+//		-1, -1, -1,   
+//		-1, -1, 0.4,  
+//		 1, -1, 0.4,   
+//		 1, -1, -1,//bottom
+//
+//		-1, 1, -1,  
+//		-1, 0.4, 1,   
+//		 1, 0.4, 1,   
+//		 1, 1, -1,//top
+//
+//		-0.5, -1, -1,   
+//		-0.5, 0.5, -1,   
+//		 0.5,  0.5, -1,  
+//		 0.5, -1, -1,//back
+//
+//		-0.25, -0.25, 1,  
+//		-0.25, 0.25, 1, 
+//		 0.25, 0.25, 1,  
+//		 0.25, -0.25, 1//front
+//
+//	};
+//
+//	GLfloat colors[] =
+//	{
+//		0, 0, 0,   0, 0, 1,   0, 1, 1,   0, 1, 0,
+//		1, 0, 0,   1, 0, 1,   1, 1, 1,   1, 1, 0,
+//		0, 0, 0,   0, 0, 1,   1, 0, 1,   1, 0, 0,
+//		0, 1, 0,   0, 1, 1,   1, 1, 1,   1, 1, 0,
+//		0, 0, 0,   0, 1, 0,   1, 1, 0,   1, 0, 0,
+//		0, 0, 1,   0, 1, 1,   1, 1, 1,   1, 0, 1
+//	};
+//
+//	//gameloop
+//	while (!glfwWindowShouldClose(window))
+//	{
+//		//for the bg color
+//		glClearColor(0.5, 1, 1, 0); //for rgb color change
+//		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);//to clear the buffer
+//
+//		glMatrixMode(GL_PROJECTION_MATRIX);
+//		glLoadIdentity();
+//		gluPerspective(100, wid / height, 1.2, 10);
+//		
+//		static float translate = 0;
+//		glTranslatef(-0.3 + translate , -0.3 , -5);
+//
+//		static float angle = 0;
+//		glRotatef(angle, 1, 0, -1);
+//		
+//		//draw triangle
+//		//glColor3f(1, 0, 0);
+//		glEnableClientState(GL_VERTEX_ARRAY);
+//		glEnableClientState(GL_COLOR_ARRAY);
+//		glVertexPointer(3, GL_FLOAT, 0, vertices);
+//		glColorPointer(3, GL_FLOAT, 0, colors);
+//		glDrawArrays(GL_QUADS, 0, 24);
+//		glDisableClientState(GL_COLOR_ARRAY);
+//		glDisableClientState(GL_VERTEX_ARRAY);
+//
+//		translate += 0.02;
+//		angle += 0.5;
+//
+//		glfwSwapBuffers(window);//to swap the new color for window
+//		glfwPollEvents();
+//	}
+//	glfwTerminate();
+//}
+
+
+
+//
+
 #include<GL/glew.h>
 #include<GLFW/glfw3.h>
 #include<iostream>
 
 using namespace std;
+
+void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods);
+
+GLfloat rotationx = 0;
+GLfloat rotationy = 0;
+
+GLfloat transx = 0;
+GLfloat transy = 0;
 
 void main()
 {
@@ -4349,6 +4456,7 @@ void main()
 
 	// make the window context current
 	glfwMakeContextCurrent(window);
+	glfwSetKeyCallback(window, keyCall);
 
 	float vertices[] =
 	{
@@ -4363,22 +4471,22 @@ void main()
 		 1, -1, 1,  //H //right
 
 		-1, -1, -1,   
-		-1, -1, 0.4,  
+		-1, -1, 0.4,   
 		 1, -1, 0.4,   
 		 1, -1, -1,//bottom
 
-		-1, 1, -1,  
+		-1, 1, -1,   
 		-1, 0.4, 1,   
 		 1, 0.4, 1,   
 		 1, 1, -1,//top
 
 		-0.5, -1, -1,   
-		-0.5, 0.5, -1,   
+		-0.5, 0.5, -1,  
 		 0.5,  0.5, -1,  
 		 0.5, -1, -1,//back
 
 		-0.25, -0.25, 1,  
-		-0.25, 0.25, 1, 
+		-0.25, 0.25, 1,  
 		 0.25, 0.25, 1,  
 		 0.25, -0.25, 1//front
 
@@ -4386,12 +4494,12 @@ void main()
 
 	GLfloat colors[] =
 	{
-		0, 0, 0,   0, 0, 1,   0, 1, 1,   0, 1, 0,
-		1, 0, 0,   1, 0, 1,   1, 1, 1,   1, 1, 0,
-		0, 0, 0,   0, 0, 1,   1, 0, 1,   1, 0, 0,
-		0, 1, 0,   0, 1, 1,   1, 1, 1,   1, 1, 0,
-		0, 0, 0,   0, 1, 0,   1, 1, 0,   1, 0, 0,
-		0, 0, 1,   0, 1, 1,   1, 1, 1,   1, 0, 1
+	0, 0, 0,   0, 0, 1,   0, 1, 1,   0, 1, 0,
+	1, 0, 0,   1, 0, 1,   1, 1, 1,   1, 1, 0,
+	0, 0, 0,   0, 0, 1,   1, 0, 1,   1, 0, 0,
+	0, 1, 0,   0, 1, 1,   1, 1, 1,   1, 1, 0,
+	0, 0, 0,   0, 1, 0,   1, 1, 0,   1, 0, 0,
+	0, 0, 1,   0, 1, 1,   1, 1, 1,   1, 0, 1
 	};
 
 	//gameloop
@@ -4404,13 +4512,10 @@ void main()
 		glMatrixMode(GL_PROJECTION_MATRIX);
 		glLoadIdentity();
 		gluPerspective(100, wid / height, 1.2, 10);
-		
-		static float translate = 0;
-		glTranslatef(-0.3 + translate , -0.3 , -5);
+		glTranslatef(-0.3 + transx, -0.3 + transy, -5);
+		glRotatef(rotationx, 1, 0, -1);
+		glRotatef(rotationy, 0, 1, -1);
 
-		static float angle = 0;
-		glRotatef(angle, 1, 0, -1);
-		
 		//draw triangle
 		//glColor3f(1, 0, 0);
 		glEnableClientState(GL_VERTEX_ARRAY);
@@ -4421,11 +4526,55 @@ void main()
 		glDisableClientState(GL_COLOR_ARRAY);
 		glDisableClientState(GL_VERTEX_ARRAY);
 
-		translate += 0.02;
-		angle += 0.5;
-
 		glfwSwapBuffers(window);//to swap the new color for window
 		glfwPollEvents();
 	}
 	glfwTerminate();
 }
+
+void keyCall(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+	const GLfloat rotationSpeed = 1;
+	const GLfloat trans = 1;
+	if (action == GLFW_PRESS || action == GLFW_REPEAT)
+	{
+		switch (key)
+		{
+		case GLFW_KEY_UP:
+			rotationx -= rotationSpeed;
+			break;
+
+		case GLFW_KEY_DOWN:
+			rotationx += rotationSpeed;
+			break;
+
+		case GLFW_KEY_LEFT:
+			rotationy -= rotationSpeed;
+			break;
+
+		case GLFW_KEY_RIGHT:
+			rotationy += rotationSpeed;
+			break;
+
+		case GLFW_KEY_W:
+			transy += trans;
+			break;
+
+		case GLFW_KEY_S:
+			transy -= trans;
+			break;
+
+		case GLFW_KEY_A:
+			transx -= trans;
+			break;
+
+		case GLFW_KEY_D:
+			transx += trans;
+			break;
+
+		default:
+			break;
+		}
+	}
+}
+
